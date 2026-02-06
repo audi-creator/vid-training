@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vid/Training Usage Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: transparent;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-radius: 16px;
+            padding: 30px;
+            max-width: 800px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            border: 3px solid #ff9800;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .title {
+            color: #e65100;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .icon {
+            font-size: 32px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .card-title {
+            color: #e65100;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .card-text {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .alert {
+            background: white;
+            border: 2px solid #ef6c00;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .alert-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        .alert-text {
+            color: #333;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">
+                <span class="icon">📚</span>
+                <span>Vid/Training - Three Use Cases</span>
+            </h1>
+        </div>
+        
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🎓</div>
+                <div class="card-title">New Hire Training</div>
+                <div class="card-text">Orientation & training sessions during first 1-2 weeks</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">👀</div>
+                <div class="card-title">Shadowing</div>
+                <div class="card-text">Observing others while YOU are learning</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">📖</div>
+                <div class="card-title">Continuing Education</div>
+                <div class="card-text">LMS courses, Tier 2 training, certifications</div>
+            </div>
+        </div>
+        
+        <div class="alert">
+            <div class="alert-icon">⚠️</div>
+            <div class="alert-text">
+                Always comment with specific activity. Non-essential training requires manager approval.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
